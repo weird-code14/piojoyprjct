@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Halloween Party 2025</title>
+  <link rel="stylesheet" href="rayjoy2.css">
+</head>
+<body>
+
+  <header>
+    <h1>RAYJOY/LOGIN</h1>
+    <p>Join us to experience the feeling of creating beautiful memories</p>
+  </header>
+  <section>
+    <h2>ABOUT</h2>
+    <p><strong>With a passion for guiding women back to their authentic selves, I offer coaching that helps you understand your value and transform your relationships — starting with the one you have with yourself.
+  </strong></p>
+
+    <button class="cta-button" onclick="toggleForm('login')">Login</button>
+    <button class="cta-button" onclick="toggleForm('signup')">Sign Up</button>
+  </section>
+
+  <div id="loginForm" class="form-container" style="display:none;">
+    <h3>Login</h3>
+    <input type="text" id="loginUser" placeholder="Username">
+    <input type="password" id="loginPass" placeholder="Password">
+    <button class="cta-button" onclick="submitLogin()">Login</button>
+    <span class="toggle-link" onclick="toggleForm('signup')">Don't have an account? Sign up</span>
+  </div>
+
+  <div id="signupForm" class="form-container" style="display:none;">
+    <h3>Sign Up</h3>
+    <input type="text" id="signupUser" placeholder="Username">
+    <input type="email" id="signupEmail" placeholder="Email">
+    <input type="password" id="signupPass" placeholder="Password">
+    <button class="cta-button" onclick="submitSignup()">Sign Up</button>
+    <span class="toggle-link" onclick="toggleForm('login')">Already have an account? Log in</span>
+  </div>
+
+  <footer>
+    &copy; 2025 Rachael Coaching. All rights reserved.
+  </footer>
+  <script src="/testing.js"></script>
+</body>
+</html>

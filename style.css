@@ -1,0 +1,192 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Variables */
+:root {
+  --dark-blue: #0D1B2A;
+  --teal: #2EC4B6;
+  --light-gray: #D3DCE6;
+  --white: #F5F5F5;
+}
+
+/* Body */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--light-gray);
+  color: var(--dark-blue);
+}
+
+/* Navbar */
+.navbar {
+  background-color: var(--dark-blue);
+  color: var(--white);
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--teal);
+}
+
+.nav-links a {
+  margin-left: 1rem;
+  color: var(--white);
+  text-decoration: none;
+}
+a{
+    color: white;
+}
+
+/* Hero */
+.hero {
+  background-color: var(--dark-blue);
+  color: var(--white);
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  color: var(--teal);
+}
+
+.hero p {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+
+.cta-button {
+  margin-top: 2rem;
+  background-color: var(--teal);
+  color: var(--dark-blue);
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* About */
+.about {
+  padding: 3rem 2rem;
+  background-color: var(--light-gray);
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Startups / What We Do */
+.startups {
+  padding: 3rem 2rem;
+  background-color: var(--white);
+  text-align: center;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.card {
+  background-color: var(--dark-blue);
+  color: var(--white);
+  padding: 1.5rem;
+  border-radius: 8px;
+  width: 280px;
+}
+
+/* Split Section */
+.split-section {
+  display: flex;
+  background-color: var(--dark-blue);
+  color: var(--white);
+  padding: 4rem 2rem;
+  align-items: center;
+  gap: 2rem;
+}
+
+.text-box {
+  flex: 1;
+}
+
+.graphic-box {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.graphic-box img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Features */
+.features {
+  display: flex;
+  justify-content: space-around;
+  padding: 3rem 2rem;
+  background-color: var(--light-gray);
+}
+
+.feature-column {
+  background-color: var(--dark-blue);
+  color: var(--white);
+  padding: 1.5rem;
+  border-radius: 8px;
+  width: 30%;
+}
+
+.feature-column.highlighted {
+  background-color: var(--teal);
+  color: var(--dark-blue);
+  font-weight: bold;
+}
+
+/* Footer */
+.footer {
+  background-color: var(--dark-blue);
+  color: var(--white);
+  text-align: center;
+  padding: 1rem;
+}
+/* Top Logo */
+.top-logo {
+  background-color: var(--dark-blue);
+  color: var(--teal);
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* Adjust Navbar (remove logo from here) */
+.navbar {
+  background-color: var(--dark-blue);
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem 2rem;
+}
+
+.nav-links a {
+  margin: 0 1rem;
+  color: var(--white);
+  text-decoration: none;
+  font-size: 1rem;
+}
