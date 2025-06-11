@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Custom Video Player</title>
+ <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<div class="video-container">
+  <video id="videoplayer" crossorigin="anonymous">
+    <!-- Video sources will be set dynamically -->
+    <track id="subtitleTrack" kind="subtitles" srclang="en" default>
+  </video>
+  <div class="progress-bar-container">
+  <div id="progressBar" class="progress-bar">
+    <div id="progressFill" class="progress-fill"><span id="videoTimer">00:00 / 00:00</span></div>
+  </div>
+</div>
+
+  <div class="controls">
+    <button id="playBtn">Play</button>
+    <button id="pauseBtn">Pause</button>
+    <button id="skipBackBtn">« 10s</button>
+    <button id="skipForwardBtn">10s »</button>
+    <button id="loopBtn">Loop: Off</button>
+
+    <select id="qualitySelector">
+      <option value="high">High</option>
+      <option value="mid">Mid</option>
+      <option value="low">Low</option>
+    </select>
+
+    <select id="subtitleSelector">
+      <option value="english">English</option>
+      <option value="spanish">Spanish</option>
+      <option value="off">Off</option>
+    </select>
+  </div>
+</div>
+<script src="index.js" ></script>
+</body>
+</html>

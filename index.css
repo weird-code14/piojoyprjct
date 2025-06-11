@@ -1,0 +1,70 @@
+ body {
+      font-family: Arial, sans-serif;
+      background: #111;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .video-container {
+      position: relative;
+      width: 640px;
+    }
+
+    video {
+      width: 100%;
+      background: black;
+    }
+.progress-bar-container {
+  width: 100%;
+  height: 15px;
+  background: #333;
+  border-radius: 5px;
+  margin: 8px 0;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background: #222;
+}
+
+.progress-fill {
+  height: 100%;
+  background: #00bcd4;
+  width: 0%;
+  transition: width 0.1s linear;
+}
+
+.controls {
+      display: flex;
+      justify-content: space-around;
+      background: #222;
+      padding: 10px;
+      border-radius: 5px;
+      margin-top: 10px;
+    }
+.controls button, select {
+  background-color: #ff5722;
+  color: white;
+  border: none;
+  padding: 11px 18px;
+  font-size: 16px;
+  border-radius: 10px;
+  box-shadow: inset 2px 2px 4px rgba(0,0,0,0.2);
+  cursor: pointer;
+  transition: 0.2s;
+}
+.control button:active {
+  box-shadow: inset 4px 4px 6px rgba(0,0,0,0.3);
+}
+.controls button:hover, select:hover {
+      background: #03fc4d;
+}
